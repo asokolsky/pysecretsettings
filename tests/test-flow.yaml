@@ -1,0 +1,5 @@
+# sample flow-style YAML
+---
+sample-string: foo-bar
+sample-dict: {location: canada, cab: 15}
+sample-list: [dog, cat, mouse]

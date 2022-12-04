@@ -1,0 +1,38 @@
+# sample block-style YAML - key-value with values of all possible types
+---
+sample-string: "17"
+# all but last \n ignored
+sample-string-multi-line-nl-ignored: >
+  this is a multi-line string it
+  spans more than one
+  line
+# all \n included
+sample-string-multi-line-nl-included: |
+  this is a multi-line string it
+  spans more than one
+  line
+sample-path: foobar/rss-php-nginx:v1
+sample-integer: 17
+sample-integer-octal: 012345
+sample-integer-hexa: 0x12d4
+sample-float: 17.0
+sample-float-exp: 12.3015e+05
+sample-boolean: No
+sample-boolean-YesNo: Yes
+sample-boolean-TrueFalse: True
+sample-boolean-OnOff: Off
+sample-dict:
+  name: rss-site
+  nested-dict:
+    app: web
+sample-list:
+    - one
+    - two
+    - three
+secrets:
+  key: '1234567890123456'
+realm1:
+  decrypted-password1: BigB1gSecret
+  encrypted-password1: dOcV7/WfKO9RaK0Y6BbeQg==
+  decrypted-password2: Thing can get tricky
+  encrypted-password2: u5u5m/6sfL3T4bPjbmbd+Aizo1QbeT0SyBwM8usal4k=

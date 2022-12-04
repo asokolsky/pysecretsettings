@@ -1,0 +1,32 @@
+# https://phoenixnap.com/blog/what-is-yaml-with-examples
+
+---
+time: 19:04:12
+player: playerOne
+action: strike (miss)
+# The value should be an int:
+is-an-int: !!int 5.6
+# Turn any value to a string:
+is-a-str: !!str 90.88
+# The next value should be a boolean:
+is-a-bool: !!bool yes
+sample-string: "17"
+sample-integer: 17
+sample-float: 17.0
+sample-boolean: No
+apiVersion: v3
+kind: Pod
+metadata:
+  name: rss-site
+  labels:
+    app: web
+spec:
+  containers:
+    - name: front-end
+      image: nginx
+      ports:
+        - containerPort: 80
+    - name: rss-reader
+      image: nickchase/rss-php-nginx:v1
+      ports:
+        - containerPort: 88
